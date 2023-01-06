@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Révision Javascript</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+</head>
+<body>
+    <form name="formulaire_ajax" id="formulaire_ajax" method="post" action="" onsubmit="return checkMDP();">
+        <label for="nom">NOM</label>
+        <input type="text" name="nom" id="nom" placeholder="nom" required>
+        <label for="prenom">Prénom</label>
+        <input type="text" name="prenom" id="prenom" placeholder="prenom" required>
+        <label for="mdp">mot de passe</label>
+        <input type="text" name="mdp" id="mdp" placeholder="entrée votre mot de passe" required>
+        <label for="mdp2">mot de passe</label>
+        <input type="text" name="mdp2" id="mdp2" placeholder="re taper votre mot de passe" required>
+        <button type="button" onclick="genereMDP();">Générer un mot de passe</button>
+        <button type="button" onmousedown="voirMdp();" onmouseup="cacherMdp();">Voir</button>
+        <button type="button" onclick="afficheMdp();">Afficher</button>
+        <label for="mail">Email</label>
+        <input type="email" name="email" id="email" placeholder="email" required>
+        <label for="telephone">N° de telephone</label>
+        <input type="tel" name="telephone" id="telephone" placeholder="N° de telephone" required>
+        <p id="email_saisie"></p>
+        <button type="text" name="submit" value="Envoyer" action="assets/ajax/formulaire.php" >Envoyer</button>
+    </form>
+    <div id="message"></div>
+    <script	src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <!-- <script type="text/javascript" src="assets/js/eval.js"></script> -->
+    <script type="text/javascript" src="assets/js/jquery.js"></script>
+</body>
+</html>
